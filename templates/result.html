@@ -1,0 +1,28 @@
+
+<!-- options file code -->
+{% extends "base.html" %} {% block body %}   
+<div class="container-fluid" style="background-color: rgb(209, 205, 200);height: 90vh;">
+   <div class="container">
+<section class="options my-3 py-3">
+<h1>Speaker Diarization Results</h1>
+<p>Total Number of Speakers: {{ no_of_speakers }}</p>
+
+<h2>Speaker Details:</h2>
+<ul>
+   {% for speaker in speakers %}
+       <li>
+           Speaker {{ speaker.id }} - Gender: {{ speaker.gender }}, Age: {{ speaker.age }}
+       </li>
+   {% endfor %}
+</ul>
+
+<p> <strong>Transcription: </strong>{{transcription_result}}</p>
+<p> <strong>Bert Summary: </strong> {{bert_summary}}</p>
+<p> <strong>Facebook Model Summary: </strong> {{fb_summary}}</p>
+
+</div>
+</div>
+{% endblock %} 
+
+<!-- try new code -->
+
