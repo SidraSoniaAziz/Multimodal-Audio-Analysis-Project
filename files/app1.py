@@ -7,7 +7,7 @@ import whisper
 # ***************Gender*****************
 from pyannote.audio import Model
 model = Model.from_pretrained("pyannote/embedding",
-                              use_auth_token="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")
+                              use_auth_token="#paste token here")
 from pyannote.audio import Inference
 inference = Inference(model, window="whole")
 from tensorflow.keras.models import load_model
