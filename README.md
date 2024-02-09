@@ -15,6 +15,6 @@
 5. 'Static/assets' contain 'images'.
 6.Gender, Age models  are inside "models" folder.
 7. Uploaded audio's will be in "uploads" folder.
-8. Type "python app.py" to run this project.
+8. Type "python new3.py" to run this project.
 9. Appropriate extension for audio file is ".wav".
     Otherwise convert your audio (.mp3,.ogg,...other ) to .wav
